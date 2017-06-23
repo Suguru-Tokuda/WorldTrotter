@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BB96014B1EFB35EC0000EB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96014A1EFB35EC0000EB33 /* AppDelegate.swift */; };
-		BB96014D1EFB35EC0000EB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96014C1EFB35EC0000EB33 /* ViewController.swift */; };
+		BB96014D1EFB35EC0000EB33 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96014C1EFB35EC0000EB33 /* ConversionViewController.swift */; };
 		BB9601501EFB35EC0000EB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB96014E1EFB35EC0000EB33 /* Main.storyboard */; };
 		BB9601521EFB35EC0000EB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9601511EFB35EC0000EB33 /* Assets.xcassets */; };
 		BB9601551EFB35EC0000EB33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9601531EFB35EC0000EB33 /* LaunchScreen.storyboard */; };
 		BB9601601EFB35ED0000EB33 /* TempCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96015F1EFB35ED0000EB33 /* TempCalculatorTests.swift */; };
 		BB96016B1EFB35ED0000EB33 /* TempCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96016A1EFB35ED0000EB33 /* TempCalculatorUITests.swift */; };
+		BB9601791EFB44630000EB33 /* UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9601781EFB44620000EB33 /* UITextFieldDelegate.swift */; };
+		BB96017C1EFC61BE0000EB33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB96017B1EFC61BE0000EB33 /* MapKit.framework */; };
+		BB96017E1EFC6CA20000EB33 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96017D1EFC6CA20000EB33 /* MapViewController.swift */; };
+		BB9601801EFDB81C0000EB33 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96017F1EFDB81C0000EB33 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		BB9601471EFB35EC0000EB33 /* TempCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB96014A1EFB35EC0000EB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB96014C1EFB35EC0000EB33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB96014C1EFB35EC0000EB33 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		BB96014F1EFB35EC0000EB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9601511EFB35EC0000EB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9601541EFB35EC0000EB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		BB9601661EFB35ED0000EB33 /* TempCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB96016A1EFB35ED0000EB33 /* TempCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCalculatorUITests.swift; sourceTree = "<group>"; };
 		BB96016C1EFB35ED0000EB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9601781EFB44620000EB33 /* UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegate.swift; sourceTree = "<group>"; };
+		BB96017B1EFC61BE0000EB33 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BB96017D1EFC6CA20000EB33 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BB96017F1EFDB81C0000EB33 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB96017C1EFC61BE0000EB33 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				BB96015E1EFB35ED0000EB33 /* TempCalculatorTests */,
 				BB9601691EFB35ED0000EB33 /* TempCalculatorUITests */,
 				BB9601481EFB35EC0000EB33 /* Products */,
+				BB96017A1EFC61BE0000EB33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +108,14 @@
 			isa = PBXGroup;
 			children = (
 				BB96014A1EFB35EC0000EB33 /* AppDelegate.swift */,
-				BB96014C1EFB35EC0000EB33 /* ViewController.swift */,
+				BB96014C1EFB35EC0000EB33 /* ConversionViewController.swift */,
 				BB96014E1EFB35EC0000EB33 /* Main.storyboard */,
 				BB9601511EFB35EC0000EB33 /* Assets.xcassets */,
 				BB9601531EFB35EC0000EB33 /* LaunchScreen.storyboard */,
 				BB9601561EFB35EC0000EB33 /* Info.plist */,
+				BB9601781EFB44620000EB33 /* UITextFieldDelegate.swift */,
+				BB96017D1EFC6CA20000EB33 /* MapViewController.swift */,
+				BB96017F1EFDB81C0000EB33 /* WebViewController.swift */,
 			);
 			path = TempCalculator;
 			sourceTree = "<group>";
@@ -123,6 +136,14 @@
 				BB96016C1EFB35ED0000EB33 /* Info.plist */,
 			);
 			path = TempCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		BB96017A1EFC61BE0000EB33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB96017B1EFC61BE0000EB33 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB96014D1EFB35EC0000EB33 /* ViewController.swift in Sources */,
+				BB96014D1EFB35EC0000EB33 /* ConversionViewController.swift in Sources */,
+				BB9601791EFB44630000EB33 /* UITextFieldDelegate.swift in Sources */,
 				BB96014B1EFB35EC0000EB33 /* AppDelegate.swift in Sources */,
+				BB9601801EFDB81C0000EB33 /* WebViewController.swift in Sources */,
+				BB96017E1EFC6CA20000EB33 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
